@@ -16,15 +16,18 @@ function firstPage() {
     const link1 = document.createElement('div');
     link1.classList.add('linkDiv');
     link1.classList.add('active');
-    link1.innerText = 'Home';
+    link1.id = "home-link";
+    link1.innerText = '🏡 Home';
 
     const link2 = document.createElement('div');
     link2.classList.add('linkDiv');
-    link2.innerText = 'Menu';
+    link2.id = "menu-link";
+    link2.innerText = '🥐 Menu';
 
     const link3 = document.createElement('div');
     link3.classList.add('linkDiv');
-    link3.innerText = 'Contact';
+    link3.id = "contact-link";
+    link3.innerText = '📞 Contact';
 
     navBar.appendChild(link1);
     navBar.appendChild(link2);

@@ -2,12 +2,12 @@ function renderHome() {
     const homeContent = document.createElement('div');
     homeContent.id = 'homeContent';
 
-    const homeText = document.createElement('p');
+    const homeText = document.createElement('div');
     homeText.innerHTML =
         `
-        Hey! This is Penguin's Restaurant, welcome! :)<br>
-        Here you'll find some good food, hope you like food. If so, enjoy!<br>
-        Sed velit lacus, convallis eget leo efficitur, malesuada cursus odio. Maecenas aliquam ut nunc ut tincidunt. Nullam mollis posuere bibendum. Morbi fringilla vehicula metus vel commodo. In nunc turpis, eleifend eu iaculis sed, condimentum vitae massa. Nam posuere eros in molestie sodales.
+        <p>Hey! This is Penguin's Restaurant, welcome! 😊</p>
+        <p>Here you'll find some good food, hope you like food. If so, enjoy!</p>
+        <p>Sed velit lacus, convallis eget leo efficitur, malesuada cursus odio. Maecenas aliquam ut nunc ut tincidunt. Nullam mollis posuere bibendum. Morbi fringilla vehicula metus vel commodo. In nunc turpis, eleifend eu iaculis sed, condimentum vitae massa. Nam posuere eros in molestie sodales.</p>
         `;
 
     const img = document.createElement('img');

@@ -6,11 +6,11 @@ function changeLinkContent(link) {
     const linkContent = document.querySelector('#linkContent');
     linkContent.innerHTML = '';
 
-    if (link.innerText == "Menu")
+    if (link.id == "menu-link")
         linkContent.appendChild(renderMenu());
-    else if (link.innerText == "Home")
+    else if (link.id == "home-link")
         linkContent.appendChild(renderHome());
-    else if (link.innerText == "Contact")
+    else if (link.id == "contact-link")
         linkContent.appendChild(renderContact());
 }
 
