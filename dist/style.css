@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(250, 250, 250);
+}
+
+#titleText {
+    text-align: center;
+    margin: 75px 0;
+    font-weight: 400;
+}
+
+#content {
+    height: 100%;
+}
+
+#firstPage {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 54px;
+}
+
+.linkDiv {
+    flex: 1;
+
+    height: 100%;
+    margin: 0 15px;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: background-color 150ms;
+}
+
+.linkDiv:hover {
+    background-color: whitesmoke;
+}
+
+.active {
+    background-color: whitesmoke;
+}
+
+#linkContent {
+    background-color: whitesmoke;
+
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 0 15px 15px 15px;
+    padding: 50px;
+
+    flex: 1;
+    overflow-y: auto;
+}
+
+#homeContent {
+    display: flex;
+}
+
+#homeContent p {
+    flex: 1;
+    text-align: left;
+    line-height: 35px;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+#contactContent {
+    font-size: 32px;
+}
+
+#mainImg {
+    margin: 0 0 0 35px;
+    flex: 1;
+}
+
+@media (max-width: 650px) {
+    #linkContent {
+        padding: 10px;
+    }
+
+    #homeContent {
+        flex-direction: column;
+    }
+
+    #mainImg {
+        margin: 15px 0 0 0;
+    }
+
+    #contactContent {
+        font-size: 24px;
+    }
+}
